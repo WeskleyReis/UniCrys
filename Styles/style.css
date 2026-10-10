@@ -19,9 +19,16 @@ p {
   height: 140px;
 
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
+  align-items: center;
 
   border-bottom: 4px solid #F5D5E3;
+}
+
+.menu img {
+  max-width: 320px;
+  min-width: 0;
 }
 
 .botões {
@@ -52,6 +59,8 @@ p {
 }
 
 .botão_candidato {
+  white-space: nowrap;
+
   background-color: #FFF7FA;
   color: #D987AE;
 
@@ -59,6 +68,8 @@ p {
 }
 
 .botão_inscrever {
+  white-space: nowrap;
+
   background-color: #853858;
   color: white;
 }
@@ -111,6 +122,7 @@ p {
   display: flex;
   align-items: center;
   gap: 16px;
+  min-width: 0;
 }
 
 .lupa {
@@ -118,14 +130,15 @@ p {
 }
 
 .busca input {
-  width: 100%;
+  flex: 1;
+  min-width: 0;
+  box-sizing: border-box;
   height: 54px;
-  padding: 0px 24px;
+  padding: 0 24px;
 
   border: none;
   border-radius: 12px;
   outline: none;
-
   background-color: white;
 
   font-size: 16px;
@@ -139,6 +152,7 @@ p {
 
 .opções {
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
 }
 
@@ -166,19 +180,29 @@ p {
   color: #853858;
 }
 
+
 .container_cursos {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(436px, 1fr));
+  gap: 16px;
 }
 
 .card_curso {
+  min-width: 440px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
   border-radius: 12px;
+  border: 1px solid #F5D5E3;
+  background-color: white;
 }
 
 .card_curso img {
-  width: 440px;
-  border-radius: 12px 12px 0px 0px;
+  object-fit: cover;
 }
+
 
 .info_curso {
   display: flex;
@@ -195,6 +219,7 @@ p {
 }
 
 .nome_curso {
+  white-space: nowrap;
   font-size: 20px;
   font-family: Poppins;
   font-weight: 600;
@@ -259,4 +284,56 @@ footer {
   font-family: 'Nunito Sans';
 
   color: #853858;
+}
+
+@media (max-width: 800px) {
+  .menu {
+    height: auto;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  .menu img {
+    width: 180px;
+    max-width: 100%;
+  }
+
+  .botões {
+    padding: 0;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .botão_candidato,
+  .botão_inscrever {
+    padding: 0 12px;
+    font-size: 14px;
+  }
+
+  .conteiner_principal {
+    padding: 24px 16px;
+  }
+
+  .cabeçalho .titulo {
+    font-size: 28px;
+  }
+
+  .titulo_cursos {
+    font-size: 22px;
+  }
+
+  footer {
+    padding: 20px 12px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 515px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
