@@ -44,14 +44,15 @@ a {
   border-bottom: 2px solid #853858;
 
   transition: ease-in-out 300ms;
+
+  cursor: pointer;
 }
 
 .opção:hover {
-  border-bottom: 4px solid #853858;
+  transform: scale(1.05);
 }
 
 .opção_titulo {
-  flex-wrap: nowrap;
   padding: 0;
   margin: 0;
   
@@ -62,10 +63,6 @@ a {
   color: #853858;
 
   transition: ease-in-out 300ms;
-}
-
-.opção:hover .opção_titulo {
-  font-size: 28px;
 }
 
 .opção_subtitulo {
@@ -91,10 +88,6 @@ a {
   color: #853858;
   
   transition: ease-in-out 300ms;
-}
-
-.opção:hover .titulo {
-  font-size: 24px;
 }
 
 footer {

@@ -6,9 +6,228 @@ body {
   padding: 0;
 
   height: 100%;
+
+  background-color: #FFF7FA;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
 
+.menu {
+  height: 140px;
+
+  display: flex;
+  justify-content: space-between;
+
+  border-bottom: 4px solid #F5D5E3;
+}
+
+.botões {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  padding: 0px 48px;
+}
+
+.botão_candidato, .botão_inscrever {
+  border-radius: 12px;
+  outline: none;
+
+  font-size: 16px;
+  font-family: 'Nunito Sans';
+  font-weight: 600;
+
+  height: 54px;
+  padding: 0px 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  cursor: pointer;
+}
+
+.botão_candidato {
+  background-color: #FFF7FA;
+  color: #D987AE;
+
+  border: 2px solid #D987AE;
+}
+
+.botão_inscrever {
+  background-color: #853858;
+  color: white;
+}
+
+.conteiner_principal {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px 48px;
+}
+
+.cabeçalho {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cabeçalho .subtitulo {
+  font-size: 16px;
+  font-family: 'Nunito Sans';
+  font-weight: 700;
+  color: #D987AE;
+}
+
+.cabeçalho .titulo {
+  font-size: 32px;
+  font-family: Poppins;
+  font-weight: 600;
+  color: #853858;
+}
+
+.cabeçalho .descrição {
+  font-size: 16px;
+  font-family: 'Nunito Sans';
+  color: #853858;
+}
+
+.busca_conteiner {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  padding: 16px;
+
+  border-radius: 12px;
+  background-color: #F5D5E3;
+}
+
+.busca {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.lupa {
+  color: #853858;
+}
+
+.busca input {
+  width: 100%;
+  height: 54px;
+  padding: 0px 24px;
+
+  border: none;
+  border-radius: 12px;
+  outline: none;
+
+  background-color: white;
+
+  font-size: 16px;
+  font-family: 'Nunito Sans';
+}
+
+.busca input::placeholder {
+  font-size: 16px;
+  font-family: 'Nunito Sans';
+}
+
+.opções {
+  display: flex;
+  gap: 16px;
+}
+
+.opções p {
+  padding: 8px 16px;
+  background-color: white;
+  border-radius: 100px;
+
+  font-size: 16px;
+  font-family: 'Nunito Sans';
+  color: #853858;
+
+  cursor: pointer;
+}
+
+.opções .opção_selecionada {
+  background-color: #853858;
+  color: white;
+}
+
+.titulo_cursos {
+  font-size: 24px;
+  font-family: Poppins;
+  font-weight: 600;
+  color: #853858;
+}
+
+.container_cursos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card_curso {
+  border-radius: 12px;
+}
+
+.card_curso img {
+  width: 440px;
+  border-radius: 12px 12px 0px 0px;
+}
+
+.info_curso {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+}
+
+.tipo_curso {
+  font-size: 16px;
+  font-family: 'Nunito Sans';
+  font-weight: 700;
+  color: #D987AE;
+}
+
+.nome_curso {
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 600;
+  color: #853858;
+}
+
+.tempo {
+  font-size: 16px;
+  font-family: 'Nunito Sans';
+  color: #853858;
+}
+
+.botão_ver {
+  padding: 8px 0px;
+
+  font-size: 16px;
+  font-family: 'Nunito Sans';
+
+  border: none;
+  outline: none;
+  border-radius: 12px;
+
+  background-color: #853858;
+  color: white;
+
+  cursor: pointer;
+
+  transition: ease-in-out 300ms;
+}
+
+.botão_ver:hover {
+  transform: scale(1.05);
+}
 
 footer {
   display: flex;
