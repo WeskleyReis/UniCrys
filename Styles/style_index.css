@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+
+  height: 100%;
+}
+
+.tela {
+  display: flex;
+}
+
+.ilustração {
+  flex: 2;
+}
+
+.menu {
+  flex: 1;
+}
+
+.logo {
+  width: 100%;
+}
+
+.opção_conteiner {
+  padding: 0px 48px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.opção {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 96px;
+  padding: 0px 24px;
+
+  border-bottom: 2px solid #853858;
+
+  transition: ease-in-out 300ms;
+}
+
+.opção:hover {
+  border-bottom: 4px solid #853858;
+}
+
+.opção_titulo {
+  flex-wrap: nowrap;
+  padding: 0;
+  margin: 0;
+  
+  font-size: 24px;
+  font-family: Poppins;
+  font-weight: 600;
+
+  color: #853858;
+
+  transition: ease-in-out 300ms;
+}
+
+.opção:hover .opção_titulo {
+  font-size: 28px;
+}
+
+.opção_subtitulo {
+  flex-wrap: nowrap;
+  padding: 0;
+  margin: 0;
+  
+  font-size: 16;
+  font-family: 'Nunito Sans';
+
+  color: #D987AE;
+}
+
+.opção .titulo{
+  flex-wrap: nowrap;
+  padding: 0;
+  margin: 0;
+  
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 600;
+
+  color: #853858;
+  
+  transition: ease-in-out 300ms;
+}
+
+.opção:hover .titulo {
+  font-size: 24px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  padding: 24px;
+  border-top: 4px solid #F5D5E3;
+  background-color: #FFF7FA;
+}
+
+.titulo {
+  padding: 0;
+  margin: 0;
+
+  font-size: 16px;
+  font-family: 'Nunito Sans';
+
+  color: #D987AE;
+}
+
+.subtitulo {
+  padding: 0;
+  margin: 0;
+
+  font-size: 12px;
+  font-family: 'Nunito Sans';
+
+  color: #853858;
+}
