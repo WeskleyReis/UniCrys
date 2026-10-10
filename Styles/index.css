@@ -6,6 +6,8 @@ body {
   padding: 0;
 
   height: 100%;
+
+  background-color: #FFF7FA;
 }
 
 .tela {
@@ -18,6 +20,7 @@ body {
 
 .menu {
   flex: 1;
+  background-color: white;
 }
 
 .logo {
